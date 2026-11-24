@@ -1,0 +1,6 @@
+/* Folha de entrada: reúne tokens, base, layout, seções e responsividade. */
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./layout.css');
+@import url('./sections.css');
+@import url('./responsive.css');

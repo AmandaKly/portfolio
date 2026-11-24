@@ -1,0 +1,10 @@
+.about {
+  background: radial-gradient(
+    circle at 92% 35%,
+    rgba(228, 56, 98, 0.09),
+    transparent 22%
+  );
+}
+.projects {
+  background: linear-gradient(180deg, var(--bg), var(--surface));
+}

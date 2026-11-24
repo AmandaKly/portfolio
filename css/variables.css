@@ -1,0 +1,17 @@
+:root {
+  --bg: #fffafb;
+  --surface: #fff1f4;
+  --surface-soft: #ffe4ea;
+  --text: #27151c;
+  --muted: #745b64;
+  --line: rgba(78, 25, 42, 0.16);
+  --accent: #e43862;
+  --accent-soft: #be2850;
+  --lime: #27805c;
+  --mono: "DM Mono", monospace;
+  --sans: "DM Sans", Arial, sans-serif;
+  --container: 1180px;
+  --gutter: 1.25rem;
+  --radius: 1.25rem;
+  --shadow: 0 20px 55px rgba(125, 34, 58, 0.14);
+}

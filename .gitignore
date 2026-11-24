@@ -1,0 +1,28 @@
+# Dependências e caches de ferramentas Node.js
+node_modules/
+.npm/
+.pnpm-store/
+
+# Arquivos de ambiente e credenciais locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs e relatórios gerados
+*.log
+logs/
+coverage/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações locais de editores
+.vscode/
+.idea/
+*.swp
+*.swo
