@@ -21,9 +21,13 @@
     <!-- Navegação fixa disponível em todas as seções da página. -->
     <header class="site-header">
       <nav class="nav container" aria-label="Navegação principal">
-        <a class="brand" href="#inicio" aria-label="Amanda Kelly — início"
-          >&lt; AK /&gt;</a
-        >
+        <a class="brand" href="#inicio" aria-label="Amanda Kelly — início">
+          <img
+            class="brand__logo"
+            src="./assets/images/LogoAKtulipa.png"
+            alt="Logo AK"
+          />
+        </a>
         <button
           class="menu-toggle"
           type="button"
@@ -38,14 +42,9 @@
             <li><a class="nav-link is-active" href="#inicio">Início</a></li>
             <li><a class="nav-link" href="#sobre">Sobre</a></li>
             <li><a class="nav-link" href="#projetos">Projetos</a></li>
-            <li><a class="nav-link" href="#contato">Contato</a></li>
           </ul>
-          <a
-            class="button button--small"
-            href="https://www.linkedin.com/in/amanda-kelly-7335ba2aa/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Vamos conversar <span aria-hidden="true">↗</span></a
+          <a class="button button--small" href="#contato"
+            >Entrar em contato<span aria-hidden="true">↗</span></a
           >
         </div>
       </nav>
@@ -55,26 +54,18 @@
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="hero__grid" aria-hidden="true"></div>
         <div class="container hero__content">
-          <p class="eyebrow eyebrow--center">
-            <span></span> disponível para novos desafios
-          </p>
-          <br />
           <h1 id="hero-title">Amanda <em>Kelly</em></h1>
           <p class="hero__intro">
             <strong>Desenvolvedora Full Stack.</strong> Transformo ideias em
             produtos digitais acessíveis e funcionais.
           </p>
           <div class="hero__actions">
-            <a class="button" href="#projetos"
-              >Ver projetos <span aria-hidden="true">↓</span></a
-            >
-            <a class="button button--outline" href="#contato"
-              >Entrar em contato</a
-            >
+            <a class="button button--outline" href="#contato">Trajetória</a>
+            <a class="button" href="#projetos">Ver projetos</a>
           </div>
           <p class="hero__location">
-            <span class="status-dot" aria-hidden="true"></span> Rio Grande do
-            Norte, Brasil · #OPENTOWORK
+            <span class="status-dot" aria-hidden="true"></span> Brasil ·
+            #OPENTOWORK
           </p>
         </div>
       </section>
@@ -163,7 +154,7 @@
               <div id="education-list"></div>
             </div>
             <div class="credentials__group">
-              <p class="eyebrow"><span></span> formação</p>
+              <p class="eyebrow"><span></span> certificados</p>
               <div id="course-list"></div>
             </div>
             <div class="credentials__group">
@@ -224,11 +215,14 @@
       </section>
     </main>
     <footer class="footer container">
-      <a class="brand" href="#inicio">&lt; AK /&gt;</a>
-      <p>
-        © 2026 Amanda Kelly. Feito com HTML, CSS e
-        JS.
-      </p>
+      <a class="brand" href="#inicio" aria-label="Amanda Kelly — início">
+        <img
+          class="brand__logo"
+          src="./assets/images/LogoAKtulipa.png"
+          alt="Logo AK"
+        />
+      </a>
+      <p>© 2026 Amanda Kelly. Feito com HTML, CSS e JS.</p>
       <a href="#inicio" aria-label="Voltar ao topo">↑ voltar ao topo</a>
     </footer>
     <script type="module" src="./js/main.js"></script>

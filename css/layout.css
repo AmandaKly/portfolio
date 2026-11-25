@@ -16,9 +16,13 @@
   justify-content: space-between;
 }
 .brand {
-  font: 500 1rem var(--mono);
-  letter-spacing: -0.08em;
-  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+.brand__logo {
+  display: block;
+  width: auto;
+  height: 2.2rem;
 }
 .nav-menu {
   display: flex;
@@ -73,6 +77,9 @@
   place-items: center;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
+  background:
+    radial-gradient(circle at 28% 50%, rgba(228, 56, 98, 0.13), transparent 25%),
+    radial-gradient(circle at 48% 66%, rgba(228, 56, 98, 0.08), transparent 20%);
 }
 .hero__grid {
   position: absolute;
