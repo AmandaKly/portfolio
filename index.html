@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfólio de Amanda Kelly" />
-    <meta name="theme-color" content="#0d0c12" />
+    <meta name="theme-color" content="#fffafb" />
     <title>Amanda Kelly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="./css/components.css" />
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <!-- Navegação fixa disponível em todas as seções da página. -->
     <header class="site-header">
       <nav class="nav container" aria-label="Navegação principal">
         <a class="brand" href="#inicio" aria-label="Amanda Kelly — início">
@@ -41,6 +39,7 @@
           <ul class="nav-links">
             <li><a class="nav-link is-active" href="#inicio">Início</a></li>
             <li><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li><a class="nav-link" href="#trajetoria">Trajetória</a></li>
             <li><a class="nav-link" href="#projetos">Projetos</a></li>
           </ul>
           <a class="button button--small" href="#contato"
@@ -53,14 +52,27 @@
     <main id="conteudo">
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="hero__grid" aria-hidden="true"></div>
+        <!-- Elementos decorativos da seção inicial. -->
+        <img
+          class="hero__butterfly hero__butterfly--upper"
+          src="./assets/images/Upper-leftButterfly.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="hero__butterfly hero__butterfly--bottom"
+          src="./assets/images/Bottom-rightButterfly.png"
+          alt=""
+          aria-hidden="true"
+        />
         <div class="container hero__content">
           <h1 id="hero-title">Amanda <em>Kelly</em></h1>
           <p class="hero__intro">
-            <strong>Desenvolvedora Full Stack.</strong> Transformo ideias em
-            produtos digitais acessíveis e funcionais.
+            <strong>Desenvolvedora de Software.</strong> Transformo ideias em
+            sistemas funcionais.
           </p>
           <div class="hero__actions">
-            <a class="button button--outline" href="#contato">Trajetória</a>
+            <a class="button button--outline" href="#trajetoria">Trajetória</a>
             <a class="button" href="#projetos">Ver projetos</a>
           </div>
           <p class="hero__location">
@@ -215,13 +227,6 @@
       </section>
     </main>
     <footer class="footer container">
-      <a class="brand" href="#inicio" aria-label="Amanda Kelly — início">
-        <img
-          class="brand__logo"
-          src="./assets/images/LogoAKtulipa.png"
-          alt="Logo AK"
-        />
-      </a>
       <p>© 2026 Amanda Kelly. Feito com HTML, CSS e JS.</p>
       <a href="#inicio" aria-label="Voltar ao topo">↑ voltar ao topo</a>
     </footer>

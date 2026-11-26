@@ -1,0 +1,44 @@
+name: Publicar no GitHub Pages
+
+# Publica automaticamente a versão de produção após um push na branch principal.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissões mínimas para ler o repositório e publicar no GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita duas publicações simultâneas e mantém a execução mais recente.
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Obtém os arquivos estáticos do portfólio.
+      - name: Baixar código do repositório
+        uses: actions/checkout@v6
+
+      # Configura os metadados exigidos pelo GitHub Pages.
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      # Envia a raiz do projeto como artefato, sem necessidade de build.
+      - name: Enviar arquivos do site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      # Publica o artefato no ambiente de produção.
+      - name: Publicar site
+        id: deployment
+        uses: actions/deploy-pages@v4
