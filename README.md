@@ -19,11 +19,3 @@ assets/
   images/     # imagens locais do site
   icons/      # ícones locais do site
 ```
-
-## Rodando localmente
-
-Como o projeto utiliza módulos ES, abra-o com um servidor local:
-
-```bash
-npx serve .
-```
