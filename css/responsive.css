@@ -36,6 +36,9 @@
   .site-header .container {
     width: calc(100% - 2rem);
   }
+  .brand__logo {
+    height: 1.95rem;
+  }
   .section {
     padding: 5rem 0;
   }
